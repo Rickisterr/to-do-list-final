@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+body {
+  display: block;
+  box-sizing: border-box;
+  padding: 0%;
+  border: 0px;
+  margin: 0%;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.glyphicon {
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#selected-task {
   color: white;
+  background-color: #786609;
 }
 
-.App-link {
-  color: #61dafb;
+.Header {
+  display: inline-block;
+  padding: 0%;
+  border: 0px;
+  margin: 0%;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bolder;
+  background-color: #F76C6C;
+  height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Main-Tab {
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+.Tasks-Display {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  height: 100%;
+  background-color: #A8D0E6;
+  overflow: auto;
+}
+
+.tasks {
+  display: block;
+  overflow: hidden;
+  float: left;
+}
+
+.Tasks-Display button {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  background-color: #f8e9a1;
+  border-radius: 6px;
+}
+
+.Tasks-Display button:hover {
+  background-color: #ffda25;
+}
+
+.Tasks-Options {
+  display: inline;
+  background-color: aqua;
+  width: 40%;
+}
+
+.trash {
+  text-decoration: none;
+  background-color: #f82121;
+  width: 48%;
+  border-radius: 4px;
+  border: 1px black;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin: 5px;
+}
+
+.done {
+  text-decoration: none;
+  background-color: #49ef52;
+  width: 48%;
+  border-radius: 4px;
+  border: 1px black;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin: 5px;
+}
+
+.Tasks-Input {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 15px;
+  padding-top: 2%;
+  padding-bottom: 40%;
+  height: 100%;
+  width: 100%;
+  background-color: #4b63ff;
+}
+
+.form-label {
+  width: 100%;
+}
+
+.form-label [type=text] {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  display: inline-block;
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+#Enter {
+  text-decoration: none;
+  padding: 8px 28px;
+  border-radius: 3px;
+  margin: 5px;
+  float: right;
+  background-color: #166f1a;
+  color: aliceblue;
+  border-color: #156519;
+}
+
+.inputform {
+  display: inline;
+  font-size: 20px;
 }
